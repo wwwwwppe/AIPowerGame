@@ -15,17 +15,17 @@
 
 ## 先看这些文档
 
-- [长期记忆](/D:/TBK/AI/game/docs/长期记忆_电力市场交易赛道.md)
-- [7天启动计划](/D:/TBK/AI/game/docs/7天启动计划_电力市场交易赛道.md)
-- [AI接力提示词](/D:/TBK/AI/game/docs/AI接力提示词.md)
+- [长期记忆](docs/长期记忆_电力市场交易赛道.md)
+- [7天启动计划](docs/7天启动计划_电力市场交易赛道.md)
+- [AI接力提示词](docs/AI接力提示词.md)
 
 ## 已创建的 baseline 骨架
 
 代码目录：
 
-- [pyproject.toml](/D:/TBK/AI/game/pyproject.toml)
-- [configs/baseline.toml](/D:/TBK/AI/game/configs/baseline.toml)
-- [src/ai4s_power_market](/D:/TBK/AI/game/src/ai4s_power_market)
+- [pyproject.toml](pyproject.toml)
+- [configs/baseline.toml](configs/baseline.toml)
+- [src/ai4s_power_market](src/ai4s_power_market)
 
 功能分层：
 
