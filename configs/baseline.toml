@@ -1,0 +1,46 @@
+[paths]
+results_dir = "outputs"
+default_data_path = "data/raw/sample_market.csv"
+
+[data]
+timestamp_col = "timestamp"
+target_col = "price"
+known_feature_cols = ["load", "wind", "solar", "temperature"]
+
+[features]
+lag_source_cols = ["price", "load", "wind", "solar"]
+lags = [1, 4, 96]
+rolling_windows = [4, 16, 96]
+add_calendar_features = true
+
+[model]
+model_type = "auto"
+random_state = 42
+learning_rate = 0.05
+max_depth = 6
+max_iter = 300
+
+[backtest]
+min_train_size = 672
+test_size = 96
+step_size = 96
+dispatch_horizon = 96
+max_folds = 5
+train_mode = "expanding"
+
+[storage]
+energy_capacity_mwh = 100.0
+max_charge_mw = 50.0
+max_discharge_mw = 50.0
+charge_efficiency = 0.95
+discharge_efficiency = 0.95
+initial_soc_mwh = 50.0
+terminal_soc_mwh = 50.0
+interval_minutes = 15
+soc_grid_mwh = 2.0
+power_grid_mw = 5.0
+
+[demo]
+days = 40
+freq_minutes = 15
+seed = 42
