@@ -1,2 +1,0 @@
-[console_scripts]
-ai4s-power-market = ai4s_power_market.cli:main
